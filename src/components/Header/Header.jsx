@@ -25,9 +25,9 @@ export const Header = () => {
           <span className={s.navItemLineOne}>Your</span>
           <span className={s.navItemLineTwo}>Shop</span>
         </div>
-        <div className={s.navItem}>
+        <div className={`${s.navItem} ${s.cartCount}`}>
           <ShoppingCartIcon className={s.itemCart}/>
-          <span className={s.navItemLineTwo + ' ' + s.cartCount}>0</span>
+          <span className={s.navItemLineTwo}>0</span>
         </div>
       </div>
     </div>
